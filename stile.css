@@ -1,0 +1,36 @@
+body {
+     font-family: Arial;
+     background-color: #eeeeee;
+   }
+   h1 {
+     text-align: center;
+     color: blue;
+   }
+   .box {
+     background-color: white;
+     padding: 15px;
+     margin: 15px;
+   }
+   label {
+     display: inline-block;
+     padding: 5px;
+     margin: 4px 10px 4px 0;
+   }
+   #verifica:not(:target) .correct:checked + label,
+   #verifica:not(:target) .wrong:checked + label {
+     background-color: transparent;
+   }
+   #verifica:target .correct:checked + label {
+     background-color: lightgreen;
+   }
+   #verifica:target .wrong:checked + label {
+     background-color: lightcoral;
+   }
+   a.button {
+     display: inline-block;
+     padding: 10px;
+     background-color: lightblue;
+     text-decoration: none;
+     color: black;
+     margin: 20px;
+   }
